@@ -1,11 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const Manager = require('./lib/Manager');
-const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern');
+const Manager = require('./lib/Manager.js');
+const Engineer = require('./lib/Engineer.js');
+const Intern = require('./lib/Intern.js');
+const generatePage = require('./lib/generate_page.js');
 
-// const renderPage = require('./assets/page-render');
 const emailVerify = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const team = [];
 
@@ -210,7 +210,7 @@ function addIntern() {
 };
 
 function buildTeam() {
-    fs.writeFileSync('./dist/team.html', renderPage(team), 'UTF-8');
+    fs.writeFileSync('./dist/team.html', generatePage(team), 'UTF-8');
 }
 
 getManager();
