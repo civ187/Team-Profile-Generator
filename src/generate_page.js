@@ -4,8 +4,8 @@ function generatePage(team) {
     for (i = 0; i < team.length; i++) {
         if (team[i].role ==='Manager') {
             employees += `
-            <div class="card employee-card">
-                <div class="card-header card-header text-white bg-primary">
+            <div class="card m-2 shadow" style="width: 19rem;">
+                <div class="card-header text-white bg-primary">
                     <h2 class="card-title">${team[i].name}</h2>
                     <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${team[i].role}</h3>
                 </div>
@@ -19,10 +19,10 @@ function generatePage(team) {
             </div>`
         } else if (team[i].role === 'Engineer') {
             employees += `
-            <div class="card employee-card">
-                <div class="card-header card-header text-white bg-primary">
+            <div class="card m-2 shadow" style="width: 19rem;">
+                <div class="card-header text-white bg-primary">
                     <h2 class="card-title">${team[i].name}</h2>
-                    <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${team[i].role}</h3>
+                    <h3 class="card-title"><i class="fas fa-calculator mr-2"></i>${team[i].role}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
@@ -34,10 +34,10 @@ function generatePage(team) {
             </div>`
         } else {
             employees += `
-            <div class="card employee-card">
-                <div class="card-header card-header text-white bg-primary">
+            <div class="card m-2 shadow" style="width: 19rem;">
+                <div class="card-header text-white bg-primary">
                     <h2 class="card-title">${team[i].name}</h2>
-                    <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${team[i].role}</h3>
+                    <h3 class="card-title"><i class="fas fa-graduation-cap mr-2"></i>${team[i].role}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
@@ -60,20 +60,17 @@ function generatePage(team) {
         <title>My Team</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/c502137733.js"></script>
+        <script src="https://kit.fontawesome.com/c929a84fca.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-white bg-danger jumbotron mb-3 team-heading">
-                    <h1 class="text-center">My Team</h1>
-                </div>
-            </div>
+        <div class="container-fluid bg-danger text-white text-center py-5">
+            <h1>My Team</h1>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="team-area col-12 d-flex justify-content-center">
-                ${employees}
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="row mt-2">
+                        ${employees}
                 </div>
             </div>
         </div>
