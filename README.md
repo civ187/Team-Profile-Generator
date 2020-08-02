@@ -12,6 +12,10 @@
 
 ![Demo Image](./images/tg-Demo.gif)
 
+## link to video walkthrough
+
+https://drive.google.com/file/d/1iS90-gcFWoV8OmvJXHLTdbqBHyx_JbIl/view
+
 
 # Description:
 The Team Profile Generator prompts the user for his/her team members and their information.  Upon completion, an HTML file is generated that displays a nicely formatted team roster based on the user input.  
