@@ -28,7 +28,7 @@ Install Node Package Manager (npm) components in the following order:
 3. `npm install jest --save-dev`
 4. change script value to jest under the test property in the package-json file  
 
-![json Image](images/Json.png)
+![json Image](images/Json.PNG)
 
 ## App Usage:
 
