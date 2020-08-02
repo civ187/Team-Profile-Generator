@@ -211,6 +211,8 @@ function addIntern() {
 
 function buildTeam() {
     fs.writeFileSync('./dist/team.html', generatePage(team), 'UTF-8');
+    console.log('The "team.html" has been created.');
+    console.log('It can found in the "dist" folder');
 }
 
 getManager();
