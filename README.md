@@ -10,8 +10,11 @@
 [7. Questions](#Questions)  
 ## Demo  
 
-![Demo Image](./images/tg-Demo.gif)
+![Demo Image](images/tg-Demo.gif)
 
+## Link to video walkthrough
+
+https://drive.google.com/file/d/1iS90-gcFWoV8OmvJXHLTdbqBHyx_JbIl/view
 
 # Description:
 The Team Profile Generator prompts the user for his/her team members and their information.  Upon completion, an HTML file is generated that displays a nicely formatted team roster based on the user input.  
@@ -25,7 +28,7 @@ Install Node Package Manager (npm) components in the following order:
 3. `npm install jest --save-dev`
 4. change script value to jest under the test property in the package-json file  
 
-    ![json Image](./images/json_image.png)
+    ![json Image](images/json_image.png)
 
 ## App Usage:
 
